@@ -9,7 +9,7 @@ const Logo = ({ width = "100px" }) => {
         width={width}
         height={width}
       >
-        <rect width="100" height="100" rx="15" fill="#2563eb" />
+        <rect width="100" height="100" rx="15" fill="#4F46E5" />
         <text
           x="50"
           y="62"

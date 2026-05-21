@@ -14,7 +14,7 @@ const App = () => {
       .getCurrentUser()
       .then((userData) => {
         if (userData) {
-          dispatch(login({ userData })); // fixed: wrapped in { userData }
+          dispatch(login({ userData }));
         } else {
           dispatch(logout());
         }

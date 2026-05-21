@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Logo, LogoutBtn } from "../index";
+import { Container, Logo, LogoutBtn, Button } from "../index";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -50,12 +50,13 @@ const Header = () => {
             {navItems.map((item) =>
               item.active ? (
                 <li key={item.name}>
-                  <button
+                  <Button
                     onClick={() => navigate(item.slug)}
-                    className="inline-block px-6 py-2 duration-200 hover:bg-blue-500/90 active:bg-blue-700 rounded-full"
+                    className="inline-block px-6 py-2  duration-20 rounded-full"
+                    bgColor="bg-[#212121]"
                   >
                     {item.name}
-                  </button>
+                  </Button>
                 </li>
               ) : null,
             )}
